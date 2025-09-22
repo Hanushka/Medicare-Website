@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About-Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Topbar -->
+      <div class="topbar">
+        <div class="topbar-left">
+          <!-- Language dropdown -->
+          <div class="language-dropdown">
+            <button class="language-btn">
+              <span class="fi fi-us"></span>▾
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <span class="fi fi-us"></span>EN<i
+                  class="fa-solid fa-check"
+                ></i>
+              </li>
+              <li><span class="fi fi-de"></span>DE</li>
+              <li><span class="fi fi-sa"></span>AR</li>
+            </ul>
+          </div>
+
+          <!-- Search Input -->
+          <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" onclick="toggleMenu(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Sliding Mobile Menu -->
+        <nav class="mobile-menu" id="mobileMenu">
+          <nav class="mobile-navbar">
+            <ul>
+              <li><a href="index.html">Home ▾</a></li>
+              <li><a href="about.html">About ▾</a></li>
+              <li><a href="contact.html">Contact ▾</a></li>
+            </ul>
+          </nav>
+        </nav>
+
+        <!-- Right -->
+        <div class="topbar-right">
+          <button class="doctor-btn">Find a Doctor</button>
+          <button class="request-btn">Request Appointment</button>
+        </div>
+      </div>
+
+      <!-- Midbar -->
+      <div class="midbar">
+        <img src="Images/LOGO.png" />
+        <div class="contact">
+          <div class="contact-info">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Address</strong>
+              <p class="address">5525 W Slauson Ave,<br />LA, CA 90056, USA</p>
+            </div>
+          </div>
+          <hr />
+          <div class="contact-info">
+            <i class="fa-solid fa-headset"></i>
+            <div>
+              <strong>Phone Appointment</strong>
+              <p class="phone">(555) 555-1234<br />(555) 555-5678</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul>
+          <li class="dropdown">
+            <a href="index.html">Home ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Header Static</a></li>
+              <li><a href="#">Header Slider</a></li>
+              <li><a href="#">YouTube Background</a></li>
+              <li><a href="#">Self Hosted Video</a></li>
+              <li><a href="#">RTL</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About ▾</a></li>
+          <li><a href="contact.html">Contact ▾</a></li>
+        </ul>
+      </nav>
+
+      <!-- About Section -->
+      <section class="about-banner">
+        <div class="about-banner-content">
+          <h3>About Medicare</h3>
+          <p>About Our Hospital</p>
+        </div>
+      </section>
+
+      <!-- About information -->
+      <section class="about-info">
+        <div class="about-info-container">
+          <!-- Left Column: Image -->
+          <div class="about-image">
+            <img src="images/bruno-rodrigues-About Section 2-unsplash.jpg" />
+          </div>
+
+          <!-- Right Column: Text -->
+          <div class="about-text">
+            <h4>Introducing</h4>
+            <h1>
+              Tackle the challenge of delivering health care in 21st century.
+            </h1>
+            <p class="text">
+              We provide the most full medical services, so every person could
+              have the opportunity to receive qualitative medical help.
+            </p>
+            <p>
+              Our Clinic has grown to provide a world class facility for the
+              treatment of tooth loss, dental cosmetics and bore advanced
+              restorative dentistry. We are among the most qualified implant
+              providers in the AUS with over 30 years of quality training and
+              experience.
+            </p>
+            <p>
+              We offer extensive medical procedures to outbound and inbound
+              patients what it is and we are very proud of achievement of our
+              stpatients for recovery Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Ea, eaque. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Quasi sit, veniam? Aut consectetur
+              dicta in labore officiis recusandae similique velit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="about-stats">
+        <div class="stats-container">
+          <div class="stat-box">
+            <i class="fa-solid fa-face-smile"></i>
+            <h2 class="counter" data-target="36487">0</h2>
+            <p>Clients</p>
+          </div>
+          <div class="stat-box">
+            <i class="fa-solid fa-hospital"></i>
+            <h2 class="counter" data-target="512">0</h2>
+            <p>Hospital Rooms</p>
+          </div>
+          <div class="stat-box">
+            <i class="fa-solid fa-chart-pie"></i>
+            <h2 class="counter" data-target="25">0</h2>
+            <p>Years of Experience</p>
+          </div>
+          <div class="stat-box">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <h2 class="counter" data-target="130">0</h2>
+            <p>Qualified Staffs</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Intro -->
+      <section class="team-intro">
+        <div class="team-header">
+          <h6>Meet Our Experienced Team</h6>
+          <h3>Our Dedicated Doctors Team</h3>
+          <hr class="line-intro" />
+        </div>
+
+        <div class="featured-doctors">
+          <!-- Doctor 1 -->
+          <div class="doctor-profile">
+            <img src="images/about5 female.jpg  " />
+            <div class="doctor-info">
+              <h5>Maureen M. Achebe</h5>
+              <p class="profession">MD Hematology</p>
+              <p>
+                Maureen M. Achebe, MD, is a transplant Hematology and an
+                Associate Professor of Medicine at Harvard Medical School. Dr.
+                Abdi’s research focuses on the role of ischemia reperfusion
+                injuries in augmenting immunogenicity of allografts. He also has
+                a research interest in the ,
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor 2 -->
+          <div class="doctor-profile">
+            <img src="images/About2.jpg" />
+            <div class="doctor-info">
+              <h5>Elisa Abdulhayoglu</h5>
+              <p class="profession">MD, MS Pediatric Medicine, Neonatology</p>
+              <p>
+                Dr. Abdulhayoglu is the chief of the Neonatology division at
+                Newton-Wellesley Hospital as well as a staff neonatologist at
+                Brigham and Women’s Hospital. She is an Instructor in Pediatrics
+                at Harvard Medical School and has a Master’s of Science degree
+                in Health Communication.
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Introduction 8 members -->
+      <div class="team-grid">
+        <!-- Repeat this block for each team member -->
+        <div class="team-card">
+          <img src="images/michael-guertin-rRXERWK5-N8-unsplash.jpg" />
+          <h5>Jessica Fency</h5>
+          <p>MBBS, DEM (DU), MD (Endocrinology)</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/about4 female.jpg" />
+          <h5>Diler Acar</h5>
+          <p>MBBS, DDSc (UK), MDSc (USA)</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="Images/eros-reyes-cabrera-AZq99Wqunjs-unsplash.jpg" />
+          <h5>Reza Abdi</h5>
+          <p>MBBS, FRCP (Glasgow), DDV, MCPS, MD</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/vaibhav-vivian-3HIroMoyre8-unsplash.jpg" />
+          <h5>Susan Ann Abookire</h5>
+          <p>
+            MBBS, Diploma in Dermatology and Venereology, FCPS (Dermatology and
+            Venereology)
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/about6 female.jpg" />
+          <h5>Modhu Maria</h5>
+          <p>
+            MBBS, FCPS (Dermatology & VD), MRCPS (Glasgow), FACP (USA), FRCP
+            (Edin)
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/about8 male.jpg" />
+          <h5>Thomas A. Abrams</h5>
+          <p>MBBS, MS (Gen. Surgery), M. Ch. (Plastic Surgery)</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/about9 male.jpg" />
+          <h5>Janet L. Abrahm</h5>
+          <p>MBBS, MRCP (UK), D.Card. (London)</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/about10 male.jpg" />
+          <h5>Carrie P. Aaron</h5>
+          <p>MBBS, D.Card. (DU), FCPS (Medicine)</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <section class="cta-contact-section">
+        <div class="cta-contact-container">
+          <!-- Column 1: Phone -->
+          <div class="cta-contact-card">
+            <i class="fa-solid fa-phone cta-icon"></i>
+            <div class="cta-info">
+              <h2>+(123) 456 78910</h2>
+              <p>Have a question? Call us now</p>
+            </div>
+          </div>
+
+          <!-- Column 2: Email -->
+          <div class="cta-contact-card">
+            <i class="fa-solid fa-envelope cta-icon"></i>
+            <div class="cta-info">
+              <h2>help@medicare.com</h2>
+              <p>Need support? Drop us an email</p>
+            </div>
+          </div>
+
+          <!-- Column 3: Hours -->
+          <div class="cta-contact-card">
+            <i class="fa-solid fa-clock cta-icon"></i>
+            <div class="cta-info">
+              <p class="time">Mon – Sat 07:00 – 21:00</p>
+              <p>We are open on</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Informational Footer -->
+      <footer class="site-footer">
+        <div class="footer-container">
+          <!-- Column 1: Logo + Info -->
+          <div class="footer-column footer-brand">
+            <img src="images/logo.png" class="footer-logo" />
+            <h3>Brigham and Women's Hospital</h3>
+            <hr class="footer-head" />
+            <div class="footer-contact">
+              <p>75 FRANCIS STREET, BOSTON MA 02115</p>
+              <p>General Information: <span>671-732-5500</span></p>
+              <p>New Patients:<span>800-294-9999</span></p>
+            </div>
+          </div>
+
+          <!-- Column 2: Centers -->
+          <div class="footer-column">
+            <h5>Centers</h5>
+            <hr class="footer-center" />
+            <ul>
+              <li>Cancer Center</li>
+              <li>Heart & Vascular Center</li>
+              <li>The Lung Center</li>
+              <li>Neurosciences Center</li>
+              <li>Orthopaedic & Arthritis Center</li>
+              <li>Primary Care Center</li>
+              <li>Women's Health Center</li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Clinical Departments (Split) -->
+          <div class="footer-column">
+            <h5>Clinical Departments</h5>
+            <hr class="footer-clinic" />
+            <div class="footer-split-list">
+              <ul>
+                <li>Anesthesiology</li>
+                <li>Dermatology</li>
+                <li>Emergency Medicine</li>
+                <li>Medicine</li>
+                <li>Neurology</li>
+              </ul>
+              <ul>
+                <li>Neurosurgery</li>
+                <li>Orthopaedic Surgery</li>
+                <li>Obstetrics and Gynecology</li>
+                <li>Obstetrics and Gynecology</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 4: Departments -->
+          <div class="footer-column">
+            <h5>Departments</h5>
+            <hr class="footer-departments" />
+            <ul>
+              <li>Anesthesiology</li>
+              <li>Dermatology</li>
+              <li>Emergency Medicine</li>
+              <li>Medicine</li>
+              <li>Neurology</li>
+              <li>Neurosurgery</li>
+              <li>Orthopaedic Surgery</li>
+              <li>Obstetrics and Gynecology</li>
+              <li>Obstetrics and Gynecology</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-left">
+          <p>Thank you for creating with medicare | 2019 &deg ThemeWagon</p>
+        </div>
+        <div class="footer-right">
+          <p>v1.0.0</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Script -->
+    <script>
+      const counters = document.querySelectorAll(".counter");
+      counters.forEach((counter) => {
+        counter.innerText = "0";
+        const updateCount = () => {
+          const target = +counter.getAttribute("data-target");
+          const count = +counter.innerText;
+          const increment = target / 200;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 10);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      });
+    </script>
+
+    <!-- Footer Button -->
+    <button id="backToTop" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+      const backToTopBtn = document.getElementById("backToTop");
+
+      window.onscroll = function () {
+        const navHeight = document.querySelector(".navbar").offsetHeight;
+        if (document.documentElement.scrollTop > navHeight + 100) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      };
+
+      backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+    <!-- Script for Hambuger Menu -->
+    <script>
+      function toggleMenu(icon) {
+        document.getElementById("mobileMenu").classList.toggle("show");
+        icon.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

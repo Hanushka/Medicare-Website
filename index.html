@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicare-Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- swipper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+      integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Topbar -->
+      <div class="topbar">
+        <div class="topbar-left">
+          <!-- Language dropdown -->
+          <div class="language-dropdown">
+            <button class="language-btn">
+              <span class="fi fi-us"></span>▾
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <span class="fi fi-us"></span>EN<i
+                  class="fa-solid fa-check"
+                ></i>
+              </li>
+              <li><span class="fi fi-de"></span>DE</li>
+              <li><span class="fi fi-sa"></span>AR</li>
+            </ul>
+          </div>
+
+          <!-- Search Input -->
+          <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" onclick="toggleMenu(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Sliding Mobile Menu -->
+        <nav class="mobile-menu" id="mobileMenu">
+          <nav class="mobile-navbar">
+            <ul>
+              <li><a href="index.html">Home ▾</a></li>
+              <li><a href="about.html">About ▾</a></li>
+              <li><a href="contact.html">Contact ▾</a></li>
+            </ul>
+          </nav>
+        </nav>
+
+        <!-- Right -->
+        <div class="topbar-right">
+          <button class="doctor-btn">Find a Doctor</button>
+          <button class="request-btn">Request Appointment</button>
+        </div>
+      </div>
+
+      <!-- Midbar -->
+      <div class="midbar">
+        <img src="Images/LOGO.png" />
+        <div class="contact">
+          <div class="contact-info">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Address</strong>
+              <p class="address">5525 W Slauson Ave,<br />LA, CA 90056, USA</p>
+            </div>
+          </div>
+          <hr />
+          <div class="contact-info">
+            <i class="fa-solid fa-headset"></i>
+            <div>
+              <strong>Phone Appointment</strong>
+              <p class="phone">(555) 555-1234<br />(555) 555-5678</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul>
+          <li class="dropdown">
+            <a href="index.html">Home ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Header Static</a></li>
+              <li><a href="#">Header Slider</a></li>
+              <li><a href="#">YouTube Background</a></li>
+              <li><a href="#">Self Hosted Video</a></li>
+              <li><a href="#">RTL</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About ▾</a></li>
+          <li><a href="contact.html">Contact ▾</a></li>
+        </ul>
+      </nav>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="swiper hero-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1: Text Left -->
+            <div class="swiper-slide slide1">
+              <div class="hero-content left">
+                <h1>Small Injuries May<br />Lead to Big Problems</h1>
+                <p>Your environment could affect your fertility</p>
+                <a href="#" class="hero-btn">Learn More</a>
+              </div>
+            </div>
+
+            <!-- Slide 2: Text Center -->
+            <div class="swiper-slide slide2">
+              <div class="hero-content center">
+                <h1>
+                  Help is here<br />
+                  When you need it
+                </h1>
+                <p>A&E average wait time:30mins</p>
+                <a href="#" class="hero-btn">Learn More</a>
+              </div>
+            </div>
+
+            <!-- Slide 3: Text Left -->
+            <div class="swiper-slide slide3">
+              <div class="hero-content left">
+                <h1>One Stop Solution<br />Medical services</h1>
+                <p>Call to schedule an Appointment today</p>
+                <a href="#" class="hero-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Navigation Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <!-- Bottom Bar -->
+      <div class="bottom-bar">
+        <div class="bottom-left">
+          <p>STAY INFORMED. CONNECT WITH US.</p>
+        </div>
+        <div class="bottom-right">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+
+      <!-- Overview Section -->
+      <section class="overview-section">
+        <!-- Section Heading -->
+        <div class="overview-intro">
+          <h3>Brigham Health</h3>
+          <p>HELPING OUR PATIENTS</p>
+          <hr class="line" />
+        </div>
+
+        <div class="overview-container">
+          <!-- Left Column -->
+          <div class="overview-left">
+            <h4 class="overview-left-heading">How can we help you?</h4>
+            <a href="#" class="overview-link">Find a Doctor</a>
+            <a href="#" class="overview-link">Request Appointment</a>
+            <a href="#" class="overview-link">Location</a>
+            <a href="#" class="overview-link">Services</a>
+          </div>
+
+          <!-- Right Column -->
+          <div class="overview-right">
+            <!-- Feature Cards Side by Side -->
+            <div class="feature-card-row">
+              <div class="feature-card">
+                <img src="images/overview1.jpg" />
+                <h4>Brigham Health Physicians<br />Named "Top Doctors"</h4>
+                <p>
+                  More than 275 Brigham Health physicians<br />
+                  were included on Boston magazine’s 2019<br />
+                  list of "Top Doctor's". To prepare the<br />
+                  annual list, Bostom magazine partner's with<br />
+                  Castle Connolly Medical
+                </p>
+                <a href="#" class="card-btn">Learn More</a>
+              </div>
+
+              <div class="feature-card">
+                <img src="images/overview2.jpg" />
+                <h4>BWH Named to US News &<br />World Report's Honor Roll</h4>
+                <p>
+                  Brigham and Women's Hospital has<br />
+                  ranked among the top 20 best hospitals in<br />
+                  the nation on #[em US News and World<br />
+                  Report's US News and World Report's]
+                </p>
+                <a href="#" class="card-btn">Learn More</a>
+              </div>
+            </div>
+
+            <!-- Latest News -->
+            <div class="latest-news">
+              <h4>LATEST NEWS</h4>
+              <ul class="news-list">
+                <li>
+                  <a href="#"
+                    >Scientists create molecular tool to remove toxic protein
+                    from neuronal models of dementia</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Older women benefit significantly when screened with 3-D
+                    mammography</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Older women benefit significantly when screened with 3-D
+                    mammography</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Public announcement concerning a proposed health care
+                    project</a
+                  >
+                </li>
+              </ul>
+              <a href="#" class="news-btn">View All News</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Department Section -->
+      <section class="departments-section">
+        <div class="departments-overlay">
+          <div class="departments-header">
+            <h6>All centers</h6>
+            <h3>CENTERS OF EXCELLENCE</h3>
+            <hr class="horizontal-rule" />
+          </div>
+
+          <!-- Department Columns -->
+          <div class="departments-columns">
+            <!-- Left Column -->
+            <div class="department-column">
+              <div class="department-card">Cancer Center</div>
+              <div class="department-card">The Lung center</div>
+              <div class="department-card">Primary Care Center</div>
+            </div>
+
+            <!-- Middle Column -->
+            <div class="department-column">
+              <div class="department-card">Orthopedic center</div>
+              <div class="department-card">Neuroscience center</div>
+              <div class="department-card">All Departments & services</div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="department-column">
+              <div class="department-card">Heart & vascular center</div>
+              <div class="department-card">Women Health Center</div>
+            </div>
+          </div>
+
+          <!-- Lifestyle Column -->
+          <div class="lifestyle-card">
+            <p>
+              Although there is no magic formula for a long, healthy life,
+              decades of research confirm certain behaviors improve your
+              chances. After 43years, The Nurses’ Health Study continues to find
+              new insights for maintaining a healthy lifestyle.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section  -->
+      <section class="blog-section">
+        <div class="blog-header">
+          <h6>RECENT POSTS</h6>
+          <h3>FROM OUR BLOGS</h3>
+          <hr class="rule" />
+        </div>
+
+        <div class="blog-grid">
+          <!-- Row 1 -->
+          <div class="blog-card">
+            <img src="images/accuray-Blog-unsplash.jpg" />
+            <div class="blog-content">
+              <h4>
+                Should You Be Worried About <br />
+                Microplastics In Your Food
+              </h4>
+              <p class="blog-meta">
+                John Doe <span class="dot">•</span> 10 Jan, 2019
+              </p>
+              <p class="blog-excerpt">
+                Plastic — it’s in the air, sea and <br />
+                probably your body. Find out what are <br />
+                microplastics doing to your health...
+              </p>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <img src="images/jafar-ahmed-Blog-unsplash.jpg" />
+            <div class="blog-content">
+              <h4>
+                What to Expect During and <br />
+                After a Breast Biopsy
+              </h4>
+              <p class="blog-meta">
+                William Petro <span class="dot">•</span> 03 Feb, 2019
+              </p>
+              <p class="blog-excerpt">
+                We interview Dr Lim Siew Kuan, a <br />
+                general surgeon at Mount Elizabeth <br />
+                Novena Hospital, to understand what to <br />
+                expect...
+              </p>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="blog-card">
+            <img src="images/national-cancer-institute-Blog-unsplash.jpg" />
+            <div class="blog-content">
+              <h4>
+                How Heart Attack Signs Differ <br />
+                in Men & Women
+              </h4>
+              <p class="blog-meta">
+                Sultan Sentu <span class="dot">•</span> 05 March, 2019
+              </p>
+              <p class="blog-excerpt">
+                Is there ‘gender equality’ in heart <br />
+                attacks? The short answer is no. Here’s <br />
+                what you need to know...
+              </p>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <img src="images/mateo-hernandez-Blog-unsplash.jpg" />
+            <div class="blog-content">
+              <h4>
+                Prenatal Infection and How <br />
+                to Avoid Them
+              </h4>
+              <p class="blog-meta">
+                Marry Com <span class="dot">•</span> 29 Jun, 2019
+              </p>
+              <p class="blog-excerpt">
+                Prenatal infections can interfere with <br />
+                the health of both you and your baby, so <br />
+                it’s important to take steps to prevent <br />
+                them....
+              </p>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="blog-card">
+            <img src="images/husien-bisky-Blog-unsplash.jpg" />
+            <div class="blog-content">
+              <h4>
+                What are the screening <br />
+                Options for Heart Disease?
+              </h4>
+              <p class="blog-meta">
+                Illiana Daina <span class="dot">•</span> 29 June, 2019
+              </p>
+              <p class="blog-excerpt">
+                We interview Dr Lim Siew Kuan, a <br />
+                general surgeon at Mount Elizabeth <br />
+                Novena Hospital, to understand what to <br />
+                expect...
+              </p>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <img src="images/philippe-spitalier-P41cRiNNNfY-unsplash.jpg" />
+            <div class="blog-content">
+              <h4>
+                Should You Be Worried About <br />
+                Microplastics?
+              </h4>
+              <p class="blog-meta">
+                Tom Andrew <span class="dot">•</span> 29 June, 2019
+              </p>
+              <p class="blog-excerpt">
+                Plastic — it’s in the air, sea and <br />
+                probably your body. Find out what are <br />
+                microplastics doing to your health....
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Donation Section  -->
+      <section class="donation-section">
+        <div class="donation-container">
+          <!-- Left Column -->
+          <div class="donation-text">
+            <h3>Life, Giving, Breakthroughs</h3>
+            <p>
+              We are inspired by our patients’ courage, our <br />
+              caregivers’ compassion, and our scientists’ <br />
+              curiosity—all fueled by our donors’ generosity.
+            </p>
+            <a href="#" class="donation-btn">Give Now</a>
+          </div>
+
+          <!-- Right Column -->
+          <div class="donation-image"></div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-contact-section">
+        <div class="cta-contact-container">
+          <!-- Column 1: Phone -->
+          <div class="cta-contact-card">
+            <i class="fa-solid fa-phone cta-icon"></i>
+            <div class="cta-info">
+              <h2>+(123) 456 78910</h2>
+              <p>Have a question? Call us now</p>
+            </div>
+          </div>
+
+          <!-- Column 2: Email -->
+          <div class="cta-contact-card">
+            <i class="fa-solid fa-envelope cta-icon"></i>
+            <div class="cta-info">
+              <h2>help@medicare.com</h2>
+              <p>Need support? Drop us an email</p>
+            </div>
+          </div>
+
+          <!-- Column 3: Hours -->
+          <div class="cta-contact-card">
+            <i class="fa-solid fa-clock cta-icon"></i>
+            <div class="cta-info">
+              <p class="time">Mon – Sat 07:00 – 21:00</p>
+              <p>We are open on</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Informational Footer -->
+      <footer class="site-footer">
+        <div class="footer-container">
+          <!-- Column 1: Logo + Info -->
+          <div class="footer-column footer-brand">
+            <img src="images/logo.png" class="footer-logo" />
+            <h3>Brigham and Women's Hospital</h3>
+            <hr class="footer-head" />
+            <div class="footer-contact">
+              <p>75 FRANCIS STREET, BOSTON MA 02115</p>
+              <p>General Information: <span>671-732-5500</span></p>
+              <p>New Patients:<span>800-294-9999</span></p>
+            </div>
+          </div>
+
+          <!-- Column 2: Centers -->
+          <div class="footer-column">
+            <h5>Centers</h5>
+            <hr class="footer-center" />
+            <ul>
+              <li>Cancer Center</li>
+              <li>Heart & Vascular Center</li>
+              <li>The Lung Center</li>
+              <li>Neurosciences Center</li>
+              <li>Orthopaedic & Arthritis Center</li>
+              <li>Primary Care Center</li>
+              <li>Women's Health Center</li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Clinical Departments (Split) -->
+          <div class="footer-column">
+            <h5>Clinical Departments</h5>
+            <hr class="footer-clinic" />
+            <div class="footer-split-list">
+              <ul>
+                <li>Anesthesiology</li>
+                <li>Dermatology</li>
+                <li>Emergency Medicine</li>
+                <li>Medicine</li>
+                <li>Neurology</li>
+              </ul>
+              <ul>
+                <li>Neurosurgery</li>
+                <li>Orthopaedic Surgery</li>
+                <li>Obstetrics and Gynecology</li>
+                <li>Obstetrics and Gynecology</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 4: Departments -->
+          <div class="footer-column">
+            <h5>Departments</h5>
+            <hr class="footer-departments" />
+            <ul>
+              <li>Anesthesiology</li>
+              <li>Dermatology</li>
+              <li>Emergency Medicine</li>
+              <li>Medicine</li>
+              <li>Neurology</li>
+              <li>Neurosurgery</li>
+              <li>Orthopaedic Surgery</li>
+              <li>Obstetrics and Gynecology</li>
+              <li>Obstetrics and Gynecology</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-left">
+          <p>Thank you for creating with medicare | 2019 &deg ThemeWagon</p>
+        </div>
+        <div class="footer-right">
+          <p>v1.0.0</p>
+        </div>
+      </footer>
+    </div>
+    <!-- Script -->
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".hero-swiper", {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+      });
+    </script>
+
+    <!-- Footer Button -->
+    <button id="backToTop" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+      const backToTopBtn = document.getElementById("backToTop");
+
+      window.onscroll = function () {
+        const navHeight = document.querySelector(".navbar").offsetHeight;
+        if (document.documentElement.scrollTop > navHeight + 100) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      };
+
+      backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+    <!-- Script for Hambuger Menu -->
+    <script>
+      function toggleMenu(icon) {
+        document.getElementById("mobileMenu").classList.toggle("show");
+        icon.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
