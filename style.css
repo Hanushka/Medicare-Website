@@ -625,12 +625,12 @@ hr {
 .department-card {
   color: #fff;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 22px;
   padding: 25px;
   border: 2px solid rgb(175, 173, 173);
   border-radius: 6px;
   text-align: left;
-  width: 350px;
+  width: 380px;
 /* New */
   min-width: 250px; /* Adjust based on your design */
   flex-shrink: 0;
@@ -1592,7 +1592,7 @@ hr {
     flex-shrink: 0;
     scroll-snap-align: start;
     padding: 26px;
-    font-size: 20px;
+    font-size: 22px;
     height: 80px; 
   }
   
